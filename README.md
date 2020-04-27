@@ -7,4 +7,4 @@ An app allowing a user to play a basketball game based on if they make or miss a
 - More to come!
 
 # Version History:
-- April 26th -- Version 1.0.0 -- First Release
+- April 26/27th -- Version 1.0.0 -- First Release
