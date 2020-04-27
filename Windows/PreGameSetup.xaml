@@ -1,0 +1,117 @@
+﻿<Page
+    x:Class="BasketballGameCreator.PreGameSetup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BasketballGameCreator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="55" />
+            <RowDefinition Height="415" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Margin="15,15,0,0" Grid.ColumnSpan="4">
+            <TextBlock Text="Set lineups for both teams:" FontSize="30"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <TextBlock Text="Away Team Name:" FontSize="14" HorizontalAlignment="Center"/>
+            <TextBox x:Name="ATName" Width="200" Height="35" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <TextBlock Text="Home Team Name:" FontSize="14" HorizontalAlignment="Center"/>
+            <TextBox x:Name="HTName" Width="200" Height="35"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center">
+            <TextBlock Text="#/Pos" FontSize="16"/>
+            <TextBlock Text="PG" FontSize="24"/>
+            <TextBlock Text="SG" FontSize="24"/>
+            <TextBlock Text="SF" FontSize="24"/>
+            <TextBlock Text="PF" FontSize="24"/>
+            <TextBlock Text="C" FontSize="24"/>
+            <TextBlock Text="6" FontSize="24"/>
+            <TextBlock Text="7" FontSize="24"/>
+            <TextBlock Text="8" FontSize="24"/>
+            <TextBlock Text="9" FontSize="24"/>
+            <TextBlock Text="10" FontSize="24"/>
+            <TextBlock Text="11" FontSize="24"/>
+            <TextBlock Text="12" FontSize="24"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <TextBlock Text="PLAYERS:"/>
+            <TextBox x:Name="ATPG1"/>
+            <TextBox x:Name="ATSG1"/>
+            <TextBox x:Name="ATSF1"/>
+            <TextBox x:Name="ATPF1"/>
+            <TextBox x:Name="ATC1"/>
+            <TextBox x:Name="AT6"/>
+            <TextBox x:Name="AT7"/>
+            <TextBox x:Name="AT8"/>
+            <TextBox x:Name="AT9"/>
+            <TextBox x:Name="AT10"/>
+            <TextBox x:Name="AT11"/>
+            <TextBox x:Name="AT12"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center">
+            <TextBlock Text="#/Pos" FontSize="16"/>
+            <TextBlock Text="PG" FontSize="24"/>
+            <TextBlock Text="SG" FontSize="24"/>
+            <TextBlock Text="SF" FontSize="24"/>
+            <TextBlock Text="PF" FontSize="24"/>
+            <TextBlock Text="C" FontSize="24"/>
+            <TextBlock Text="6" FontSize="24"/>
+            <TextBlock Text="7" FontSize="24"/>
+            <TextBlock Text="8" FontSize="24"/>
+            <TextBlock Text="9" FontSize="24"/>
+            <TextBlock Text="10" FontSize="24"/>
+            <TextBlock Text="11" FontSize="24"/>
+            <TextBlock Text="12" FontSize="24"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="3">
+            <TextBlock Text="PLAYERS:"/>
+            <TextBox x:Name="HTPG1"/>
+            <TextBox x:Name="HTSG1"/>
+            <TextBox x:Name="HTSF1"/>
+            <TextBox x:Name="HTPF1"/>
+            <TextBox x:Name="HTC1"/>
+            <TextBox x:Name="HT6"/>
+            <TextBox x:Name="HT7"/>
+            <TextBox x:Name="HT8"/>
+            <TextBox x:Name="HT9"/>
+            <TextBox x:Name="HT10"/>
+            <TextBox x:Name="HT11"/>
+            <TextBox x:Name="HT12"/>
+        </StackPanel>
+
+        <StackPanel Margin="15,0,0,0" Grid.Row="3" Grid.ColumnSpan="4">
+            <TextBlock Text="Set settings:" FontSize="30"/>
+            <ComboBox Header="Choose game type: " x:Name="gameTypeCBSC" SelectionChanged="gameTypeCBSC_SelectionChanged">
+                <x:String>No Free Throws</x:String>
+                <x:String>Free Throws</x:String>
+            </ComboBox>
+            <TextBlock Text="" x:Name="gameTypeChosen"/>
+            <TextBox x:Name="userTimeInput" Header="Enter the amount of time each quarter will last for." PlaceholderText="EX: type 5 if you want each quarter to be 5 minutes long."/>
+        </StackPanel>
+
+        <Button Click="nextScreen_Click" Grid.Row="4" Grid.ColumnSpan="5" Width="400" FontSize="18" Content="BEGIN THE GAME!" HorizontalAlignment="Center" BorderBrush="Black" BorderThickness="2"/>
+    </Grid>
+</Page>
