@@ -11,19 +11,20 @@ Title Screen:
 
 Set Lineups/Rosters Screen:
 * Use the text boxes to enter players of your choice!
-** PLEASE FILL OUT THE FIRST 5 SPOTS FOR EACH TEAM! This to make sure you do not get any blank/null replacements or even crashes. Thank you and I plan to fix any problem users may have with this in the future.
-*** IF YOU PLAN ON USING BENCH PLAYERS, please be sure to fill out every single textbox! This to make sure you do not get any blank/null replacements or even crashes. Thank you and I plan to fix any problem users may have with this in the future. YOU ONLY NEED TO FILL OUT SPOTS 6-10 FOR BENCH...11 & 12 are irrelevant (for now..I will implement those reserve spots in the future).
-**** Be sure to select either FREE THROWS or NO FREE THROWS (the app will tell you your selection under the drop-down) and ENTER THE AMOUNT OF MINUTES EACH QUARTER LASTS FOR! (Ex. Type 3 in the text box, NOT 3 minutes.) 
+**PLEASE BE SURE THE TEAMS YOU USE EACH HAVE MORE THAN 3 CHARACTERS IN THEIR NAME! This is an issue I plan on correcting in the near future! If your team name is only one or two characters long, the program will crash!
+*** PLEASE FILL OUT THE FIRST 5 SPOTS FOR EACH TEAM! This to make sure you do not get any blank/null replacements or even crashes. Thank you and I plan to fix any problem users may have with this in the future.
+**** IF YOU PLAN ON USING BENCH PLAYERS, please be sure to fill out every single textbox! This to make sure you do not get any blank/null replacements or even crashes. Thank you and I plan to fix any problem users may have with this in the future. YOU ONLY NEED TO FILL OUT SPOTS 6-10 FOR BENCH...11 & 12 are irrelevant (for now..I will implement those reserve spots in the future).
+*****Be sure to select either FREE THROWS or NO FREE THROWS (the app will tell you your selection under the drop-down) and ENTER THE AMOUNT OF MINUTES EACH QUARTER LASTS FOR! (Ex. Type 3 in the text box, NOT 3 minutes.) 
 - Once you have filled everything out, click the button to start the game!
 
 Basketball Game Screen {NO FREE THROWS}: 
-***** Begin the game by clicking the "Start Q1" button on the bottom-left of your screen! NOTICE THE GAME GENERATES A SHOT FOR YOU TO MAKE! You do not need to follow this, but it adds a fun element within the app!
+****** Begin the game by clicking the "Start Q1" button on the bottom-left of your screen! NOTICE THE GAME GENERATES A SHOT FOR YOU TO MAKE! You do not need to follow this, but it adds a fun element within the app!
 - Top - Scoreboard: Away Team Score, Quarter Number and Time Left, Home Team Score
 - Middle - Buttons to bring in a team for away/home team, A PICTURE OF A BASKETBALL COURT TO TELL YOU WHERE TO SHOOT THE BALL 
 - Middle/Bottom - Buttons: *!*! RED (left) = MISS, GREEN (right) = MAKE !*!*
 - Below that - The action bar! This will be the text block which tells you, the user, what occurs in your game! A second one will occur if a player got an offensive rebound (this is so the game seems realistic). IF THE SECOND BAR POPS UP, IT WILL BE ON THE BOTTOM...TAKE THE SHOT IT TELLS YOU TO ABOVE IT.
 - Bottom - Four buttons to begin each quarter, a BOX TO SHOW WHICH PLAYERS ARE ON THE FLOOR, and a button to end the game!
-****** To begin the game, again, click the Start Q1 Button...click the Start Q2 Button when it says "Q1 Done." at the top and so on and so forth.
+******* To begin the game, again, click the Start Q1 Button...click the Start Q2 Button when it says "Q1 Done." at the top and so on and so forth.
  
 Basketball Game Screen {FREE THROWS}:
 *Everything is the same as the No Free Throws except:
@@ -40,7 +41,9 @@ This is the most important part of this doc for me, so please read this as well.
 
 1. Again, if you plan on using bench players, please fill out SPOTS 1-10 in the set lineups screen! This is to ensure the app does not crash and that you do not get any blank-named players (I will fix this in the future if it is a bad problem!).
 
-2. Future Ideas: Users can import lineups using a .txt file, you can choose who to replace who, and to make a real product which omits the user from having to click the strike/ball buttons (maybe a camera can tell the app if the user makes the shot or not...).
+2. Again, PLEASE BE SURE THE TEAMS YOU USE EACH HAVE MORE THAN 3 CHARACTERS IN THEIR NAME! This is an issue I plan on correcting in the near future! If your team name is only one or two characters long, the program will crash!
+
+3. Future Ideas: Users can import lineups using a .txt file, you can choose who to replace who, and to make a real product which omits the user from having to click the strike/ball buttons (maybe a camera can tell the app if the user makes the shot or not...).
 ---------------------------
 
 Sincerely,
