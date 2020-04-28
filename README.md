@@ -14,3 +14,7 @@ An app allowing a user to play a basketball game based on if they make or miss a
 
 # Version History:
 - April [DATE] -- Version 1.0.0 -- First Release -- Windows
+
+# Baseball Game Creator!
+- The other app in this series I have created which uses the same concept as this but for baseball! You can find it in the Google Play and Microsoft Stores (*Soon)!
+- Link to its Github: https://github.com/Baseballfan5303/VS-BaseballGameCreator
