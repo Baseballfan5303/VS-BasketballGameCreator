@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mobile_BasketballGameCreator.BasketballGameScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="240"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="175"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Frame BorderColor="DarkSlateGray" Grid.RowSpan="1" Grid.ColumnSpan="3"/>
+        <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,0,0,0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Start">
+            <Label x:Name="ATNameT" Text="TEA" FontSize="16"/>
+            <Label Text=": " FontSize="16"/>
+            <Label x:Name="ATScoreT" Text="0" FontSize="16"/>
+        </StackLayout>
+        <StackLayout Grid.Column="1" Margin="20,0,0,0" VerticalOptions="Center" HorizontalOptions="Start" Orientation="Horizontal">
+            <Label x:Name="currentQuarter" Text="Q#" FontSize="24"/>
+            <Label x:Name="uiTimer" Text="00:00" FontSize="24"/>
+        </StackLayout>
+        <StackLayout Margin="-20,0,20,0" Grid.Column="2" Orientation="Horizontal" VerticalOptions="Center">
+            <Label x:Name="HTNameT" Text="TEA" FontSize="16"/>
+            <Label Text=": " FontSize="16"/>
+            <Label x:Name="HTScoreT" Text="0" FontSize="16"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" VerticalOptions="Start">
+            <Label Text="Clicked the button(s) bring in bench for:" HorizontalOptions="Center" FontSize="11"/>
+            <Button Clicked="ChangeAwayFloor_Click" x:Name="awayStartersA" WidthRequest="80" FontSize="18" HorizontalOptions="Center" Margin="0,15,0,0" BorderColor="Black" BorderWidth="2"/>
+            <Button Clicked="ChangeHomeFloor_Click" x:Name="homeStartersA"  WidthRequest="80" FontSize="18" HorizontalOptions="Center" Margin="0,15,0,0" BorderColor="Black" BorderWidth="2"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="2" VerticalOptions="Start">
+            <Label Text="Clicked the button(s) bring in starters for:" HorizontalOptions="Center" FontSize="11"/>
+            <Button Clicked="ChangeAwayFloor_Click" x:Name="awayBenchA" WidthRequest="80" FontSize="18" HorizontalOptions="Center" Margin="0,15,0,0" BorderColor="Black" BorderWidth="2"/>
+            <Button Clicked="ChangeHomeFloor_Click" x:Name="homeBenchA"  WidthRequest="80" FontSize="18" HorizontalOptions="Center" Margin="0,15,0,0" BorderColor="Black" BorderWidth="2"/>
+        </StackLayout>
+
+        <Frame Grid.Row="2" Grid.Column="1" BorderColor="Black" Margin="0,0,0,50" BackgroundColor="Yellow"/>
+        <StackLayout Grid.Row="2" Grid.Column="1" Margin="5,15,5,0">
+            <Label Text="This will serve as the game's main action bar." x:Name="ActionBar" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="This will serve as the game's next action bar." x:Name="ActionBar2" IsVisible="False" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,-50,0,50">
+            <Button BackgroundColor="Red" WidthRequest="80" HeightRequest="135" x:Name="MissButton" Clicked="MissButton_Click" Margin="0,0,0,0" BorderColor="Black" BorderWidth="2"/>
+            <Button BackgroundColor="Green" WidthRequest="80" HeightRequest="135" x:Name="MakeButton" Clicked="MakeButton_Click" Margin="10,0,0,0" BorderColor="Black" BorderWidth="2"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="0" HorizontalOptions="End" VerticalOptions="Start" Margin="0,-50,0,50">
+            <Button BackgroundColor="LightPink" Text="FT" WidthRequest="80" HeightRequest="135" x:Name="MissFTButton" Clicked="MissFTButton_Click" Margin="5,0,0,0" BorderColor="Black" BorderWidth="2" FontSize="28"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,-50,0,50">
+            <Button BackgroundColor="LightGreen" Text="FT" WidthRequest="80" HeightRequest="135" x:Name="MakeFTButton" Clicked="MakeFTButton_Click" Margin="0,0,5,0" BorderColor="Black" BorderWidth="2" FontSize="28"/>
+        </StackLayout>
+
+        <Frame Grid.Row="4" Grid.Column="1" Margin="-5,-55,-5,0" BorderColor="Black"/>
+        <ScrollView Grid.Row="4" Grid.Column="1" Margin="0,-50,0,0">
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="ON THE FLOOR:" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout>
+                            <Label Text="Team1:" x:Name="ATNameW" FontAttributes="Bold"/>
+                            <Label Text="Player1" x:Name="AOFP1"/>
+                            <Label Text="Player2" x:Name="AOFP2"/>
+                            <Label Text="Player3" x:Name="AOFP3"/>
+                            <Label Text="Player4" x:Name="AOFP4"/>
+                            <Label Text="Player5" x:Name="AOFP5"/>
+                        </StackLayout>
+                        <StackLayout Margin="30,0,0,0">
+                            <Label Text="Team2:" x:Name="HTNameW" FontAttributes="Bold"/>
+                            <Label Text="Player6" x:Name="HOFP1"/>
+                            <Label Text="Player7" x:Name="HOFP2"/>
+                            <Label Text="Player8" x:Name="HOFP3"/>
+                            <Label Text="Player9" x:Name="HOFP4"/>
+                            <Label Text="Player10" x:Name="HOFP5"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+        <ScrollView Grid.Row="4" Grid.Column="0" HorizontalOptions="Center" Margin="0,-50,0,0">
+            <StackLayout>
+                <Button Text="Start Q1" WidthRequest="75" FontSize="12" Clicked="StartQuarter_Click" x:Name="startQ1" IsVisible="True" BorderColor="Black" BorderWidth="2"/>
+                <Button Text="Start Q2" WidthRequest="75" FontSize="12" Margin="0,5,0,0" Clicked="StartQuarter_Click" x:Name="startQ2" IsVisible="True" BorderColor="Black" BorderWidth="2"/>
+                <Button Text="Start Q3" WidthRequest="75" FontSize="12" Margin="0,5,0,0" Clicked="StartQuarter_Click" x:Name="startQ3" IsVisible="True" BorderColor="Black" BorderWidth="2"/>
+                <Button Text="Start Q4" WidthRequest="75" FontSize="12" Margin="0,5,0,0" Clicked="StartQuarter_Click" x:Name="startQ4" IsVisible="True" BorderColor="Black" BorderWidth="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <StackLayout Grid.Row="4" Grid.Column="2" Margin="0,-50,0,50" VerticalOptions="Center">
+            <Button Text="END GAME" WidthRequest="120" FontSize="12" Clicked="gameOver_Click" Margin="5,0,10,0" BorderColor="Black" BorderWidth="2" HeightRequest="100"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

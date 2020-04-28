@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mobile_BasketballGameCreator.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="250" />
+        </Grid.RowDefinitions>
+
+        <StackLayout VerticalOptions="Center" Grid.Row="0">
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Basketball Game Creator" FontSize="25" FontAttributes="Bold" TextDecorations="Underline" LineBreakMode="WordWrap"/>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Created by Andrew Holtzman-Marga" FontSize="16" Margin="0,15,0,0"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1">
+            <Button Clicked="startNewGame_Click" HorizontalOptions="Center" Text="START A NEW GAME" FontSize="36" BorderColor="Black" BorderWidth="1"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" VerticalOptions="Center">
+            <Label Text="Please click the button below to find all game notes, instructions, and files!" HorizontalOptions="Center" FontSize="20" Margin="0,0,0,0" LineBreakMode="WordWrap"/>
+            <Button Clicked="VisitGithub_Click" HorizontalOptions="Center" Text="Visit Github Page" FontSize="26" Margin="0,10,0,0" BorderColor="Black" BorderWidth="1"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

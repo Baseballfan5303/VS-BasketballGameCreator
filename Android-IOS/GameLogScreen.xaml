@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mobile_BasketballGameCreator.GameLogScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Margin="15,15,15,15" Grid.Row="0">
+            <Label Text="Game Log" FontSize="25" FontAttributes="Bold"/> 
+        </StackLayout>
+
+        <StackLayout Grid.Row="1">
+            <Entry Placeholder="Enter any extra notes here:" x:Name="extraNotesX" Margin="0,15,0,0"/>
+        </StackLayout>
+
+        <Frame Grid.Row="2" BorderColor="Black" Margin="0,15,0,0"/>
+        <StackLayout x:Name="mainGameLogSP" HorizontalOptions="Start" Margin="15,10,0,0" Grid.Row="2">
+            <ScrollView VerticalScrollBarVisibility="Always">
+                <Label x:Name="theGameLog" Margin="0,20,0,0"/>
+            </ScrollView>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3">
+            <Button HorizontalOptions="Center" FontSize="26" Text="SAVE GAME LOG" Clicked="saveGameLog_Click" Margin="0,5,0,0" BorderColor="Black" BorderWidth="1"/>
+            <Label x:Name="saveStatus" HorizontalOptions="Center" Margin="0,5,0,0" IsVisible="False"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
