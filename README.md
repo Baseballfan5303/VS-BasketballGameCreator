@@ -9,7 +9,7 @@ An app allowing a user to play a basketball game based on if they make or miss a
 - More to come!
 
 # Tutorial Video Link:
-- [LINK] -- Version 1.0.0 -- First Release -- Windows
+- https://vimeo.com/412557721 -- Version 1.0.0 -- First Release -- Windows
 
 
 # Version History:
