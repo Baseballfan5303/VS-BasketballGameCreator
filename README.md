@@ -3,9 +3,9 @@ An app allowing a user to play a basketball game based on if they make or miss a
 
 # Content within this Github:
 - A folder containing all the XAML & C# files I used to create the Windows version.
-- A folder containing all the XAML & C# files I used to create the Mobile version(s). (*Soon*)
-- The most important files: Windows-CreatorInfo (*& Mobile-Creator Info soon*) which details all screens, game directions, caveats, etc based on which version you are using!
-- Link to a tutorial video on how to use my app (Version 1.0.0 for Windows) (*& Mobile soon)
+- A folder containing all the XAML & C# files I used to create the Mobile version(s).
+- The most important files: Windows-CreatorInfo & Mobile-Creator Info which details all screens, game directions, caveats, etc based on which version you are using!
+- Link to a tutorial video on how to use my app (Version 1.0.0 for Windows & Mobile)
 - More to come!
 
 # Tutorial Video Link:
